@@ -1,3 +1,7 @@
+FROM node:14-alpine
+
+RUN apk add -U subversion
+
 FROM nginx:alpine
 
 WORKDIR /app
